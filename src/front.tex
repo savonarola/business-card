@@ -69,9 +69,10 @@
     \begin{tikzpicture}
       % name
       \matrix[every node/.style={anchor=center,font=\huge},anchor=center] (name) {
-        \node{John}; \\
-        \node{Doe}; \\
-        \node{\color{jobtitlecolour}\normalsize\textit{job title}}; \\
+        \node{Илья}; \\
+        \node{Аверьянов}; \\
+        \node{\color{jobtitlecolour}\normalsize\textit{Директор службы}}; \\
+        \node{\color{jobtitlecolour}\normalsize\textit{разработки}}; \\
       };
       % sep line 1
       \node[below=\seplinedistance of name] (hl1) {};
@@ -80,10 +81,10 @@
       \matrix [below=\seplinedistance of hl1,%
                column 1/.style={anchor=center,color=iconcolour},%
                column 2/.style={anchor=west}] (contact){
-        \node{\faGlobe}; & \node{johndoe.com};\\
-        \node{\faEnvelope}; &\node{me@johndoe.com};\\
-        \node{\faPhone}; &\node{+1 781 555 1212}; \\
-        \node{\faGithub}; &\node{johndoe}; \\
+        \node{\faBug}; & \node{FunBox};\\
+        \node{\faEnvelope}; &\node{ilya@fun-box.ru};\\
+        \node{\faPhone}; &\node{+7 123 456 7890}; \\
+        \node{\faGithub}; &\node{savonarola}; \\
       };
       % sep line 2
       \node[below=\seplinedistance of contact] (hl2) {};
@@ -92,10 +93,8 @@
       \matrix [below=\seplinedistance of hl2,
          every node/.style={anchor=center,font=\LARGE}]
          (interests) {
-        \node{\faCode}; & \node{\faCoffee}; &
-        \node{\faLock}; & \node{\faWrench}; &
-        \node{\faCameraRetro}; \\
-      }; 
+        \node{\faGithubAlt}; & \node{\faDiamond}; & \node{\faMortarBoard}; & \node{\faAutomobile}; & \node{\faBeer}; \\
+      };
     \end{tikzpicture}
   \end{center}
   \vspace*{\fill}

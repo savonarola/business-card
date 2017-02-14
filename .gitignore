@@ -1,2 +1,7 @@
-build.sh
 *.log
+*.aux
+*.pdf
+*.fls
+*.xdv
+*.fdb_latexmk
+.DS_Store

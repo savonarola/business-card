@@ -46,25 +46,20 @@
     \draw (current page.center) ++(0,\paperheight/2-\edgemargin-\paperwidth/2+\edgemargin+\logowidth/2) node (helper logo) {};
     \node[anchor=north] at (helper logo) {\includegraphics[width=\logowidth]{figures/logo}};
     % qr code
-\draw (current page.center) 
-  ++(0,-\paperheight/2+\edgemargin+\paperwidth/2-\edgemargin-\qrheight/2) 
+\draw (current page.center)
+  ++(0,-\paperheight/2+\edgemargin+\paperwidth/2-\edgemargin-\qrheight/2)
   node (helper qr) {};
-\node[anchor=south] at (helper qr) 
+\node[anchor=south] at (helper qr)
   {\qrcode[level=M,height=\qrheight]{BEGIN:VCARD
-VERSION:3.0
-N:John;Doe;;Mr.
-FN:Mr. John Doe
-TITLE:CEO Doe Enterprises
-ORG:Doe Enterprises
-PHOTO;VALUE=URI;TYPE=JPEG:https://johndoe.com/path/to/jpeg/images.jpeg
-TEL;TYPE=MOBILE:+1 781 555 1212
-EMAIL:me@johndoe.com
-URL:https://johndoe.com
-REV:2017-29-01T13:52:43Z
-BDAY:19880310
-ADR;TYPE=WORK,PREF:;;2 Some Avenue;Anytown;SF;11111;USA
+N:Averianov;Ilya;;;
+EMAIL;INTERNET:ilya@fun-box.ru
+EMAIL;INTERNET:ilya.averyanov@gmail.com
+ORG:FunBox
+TEL;WORK:+71234567890
+TITLE:Head of Application Development Department
+URL;WORK:funbox.ru
+URL:rubybox.ru
 END:VCARD}};
   \end{tikzpicture}
   \vspace*{\fill}
 \end{document}
-
