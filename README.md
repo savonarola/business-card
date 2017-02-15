@@ -13,7 +13,7 @@ How this business card was designed, is explained in [this blog post](https://ol
 Requirements (MacOS)
 ------------
 
-Install fonts to the sysytem:
+Install fonts to the system:
 
 * [Font Awesome](https://github.com/xdanaux/fontawesome-latex)
 * [Fira Sans](https://github.com/mozilla/Fira)
@@ -21,7 +21,8 @@ Install fonts to the sysytem:
 Install BasicTex, ImageMagick and GS:
 
 ```shell
-brew cask install basictex imagemagick gs
+brew cask install basictex
+brew install imagemagick gs
 ```
 
 Add installed TeX binaries directory `/usr/local/texlive/2016basic/bin/x86_64-darwin/` (or smth) to `PATH`.
@@ -32,7 +33,7 @@ Install `fontawesome` and `qrcode` packages from CTAN:
 tlmgr install fontawesome qrcode
 ```
 
-(this may require tlmgr upgrade and setting some permissions on folders)
+(this may require `tlmgr` self-upgrade and setting some permissions on folders)
 
 Building Documents
 ------------------
